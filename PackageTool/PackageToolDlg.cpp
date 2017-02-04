@@ -30,6 +30,7 @@ void CPackageToolDlg::DoDataExchange(CDataExchange* pDX)
 BEGIN_MESSAGE_MAP(CPackageToolDlg, CDialog)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDOK, &CPackageToolDlg::OnBnClickedOk)
 END_MESSAGE_MAP()
 
 
@@ -85,3 +86,13 @@ HCURSOR CPackageToolDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CPackageToolDlg::OnBnClickedOk()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	PrepareFile *prepare = new PrepareFile();
+	prepare->GetFileList();
+	//MessageBoxW(L"OK Button", L"Tips", MB_OK);
+	//CDialog::OnOK();
+}

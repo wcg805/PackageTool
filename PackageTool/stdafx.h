@@ -52,3 +52,20 @@
 #endif
 
 
+#include "tinyXml/tinystr.h"
+#include "tinyXml/tinyxml.h"
+#include "PrepareFiles.h"
+
+typedef struct FILE
+{
+	WCHAR wszFileName[100];
+	WCHAR wszFilePath[MAX_PATH];
+	UINT nType;
+
+	FILE()
+	{
+		wcsnset(wszFileName, 0, wcslen(wszFileName));
+		wcsnset(wszFilePath, 0, wcslen(wszFilePath));
+		nType = 0;
+	}
+};

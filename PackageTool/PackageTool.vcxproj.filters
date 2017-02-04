@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="tinyXML">
+      <UniqueIdentifier>{79ec4041-d977-46fc-9fbe-edb3d124b444}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -33,6 +36,15 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="PrepareFiles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyXml\tinystr.h">
+      <Filter>tinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyXml\tinyxml.h">
+      <Filter>tinyXML</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PackageTool.cpp">
@@ -43,6 +55,21 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PrepareFiles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXml\tinystr.cpp">
+      <Filter>tinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXml\tinyxml.cpp">
+      <Filter>tinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXml\tinyxmlerror.cpp">
+      <Filter>tinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXml\tinyxmlparser.cpp">
+      <Filter>tinyXML</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
